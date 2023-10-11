@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+<script src="https://kit.fontawesome.com/d63b211e4f.js" crossorigin="anonymous"></script>
+    
+</head>
+<style>
+    
+body{
+    background-color: white;
+    color: #000000;
+}
+
+nav ul {
+    display:flex;
+    list-style-type: none;
+    margin-top: 25px;
+    justify-content:baseline;
+    justify-content: center;
+}
+
+.navbar{
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+nav{
+    display: flex;
+}
+
+nav h2 {
+    justify-content: left;
+    width: 25%;
+    font-size: 2rem;
+    color: #000000
+}
+
+nav ul a{
+    margin: 30px 0 0 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 10px;
+    color: #000000
+}
+
+nav ul a:hover{
+    color: red;
+    border: none;
+    outline: none;
+}
+
+.about-me{
+    margin: 5% 15% 0 15% ;
+    display: flex;
+}
+
+.about-me .image{
+    padding: 4%;
+    width: 20%;
+    margin-right: 12%;
+    background-color:black;
+    border-radius: 30px;
+}
+
+
+.about-me .image img{
+    width: 100%;
+}
+
+.about-me p{
+    font-size: 1.3em;
+    line-height: 1.8rem;
+}
+
+#Education-details{
+    margin: 5% 5% 0 50%;
+
+}
+
+table , tr , th , td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+table tr , th , td{
+    margin: 5%;
+}
+
+
+
+#skills .skills{
+    margin-left: 42%;
+    width: 10%;
+    padding-top: 6%;
+    font-size: 1.8rem;
+}
+.my-skills{
+    margin :4% 6% 7% 9%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.my-skills .web , .programming , .science{
+    width: 26%;
+}
+
+.my-skills .web p, .programming p, .science p{
+    line-height: 1.4rem;
+    font-size: 1.2rem
+}
+
+#projects{
+    margin: 8%;
+}
+
+#projects h2{
+    font-size: 1.8rem;
+}
+
+#projects ul{
+    list-style-type: none ;
+    display: block;
+}
+
+#projects ul{
+    color: #000000;
+    text-decoration: none;
+    line-height: 1.9rem;
+    font-size: 1.3rem;
+}
+
+#contactme{
+    margin: 6% 10% 0 10%;
+    display: flex;
+}
+
+#contactme .contact-me , .form{
+    width: 50%;
+}
+
+#contactme .contact-me h2 , h3, .form h2 , h3{
+    font-size: 2rem;
+}
+
+#contactme .contact-me p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+#contactme .form input{
+    margin-top: 3%;
+    font-size: 1.3rem;
+    background-color: white;
+    color: black;
+    outline: black;
+}
+
+#contactme .form textarea{
+    background-color: white;
+    font-size: 1.3rem;
+    margin-top: 3%;
+    color: white;
+}
+
+#contactme .form .btn{
+    font-size: 1.3rem;
+    margin: 3% 0 5% 25%;
+    width: 15%;
+    text-align: center;
+}
+
+@media screen and (max-width:500px){
+    .navbar{
+        margin-left: -35%;
+        margin-top: 20%;
+    }
+
+    .navbar ul a{
+        font-size: 1.4rem;
+    }
+
+    .about-me{
+        margin:4%;
+        margin-top: 15%;
+    }
+
+    .about-me .image{
+        padding: 6%;
+        width: 65%;
+        margin-right: 10%;
+        border-radius: 5px;
+    }
+
+    #Education-details{
+        margin: 0;
+    
+    }
+    
+    table , tr , th , td{
+        border-collapse: collapse;
+        border: 1px solid black;
+        font-size: 0.9rem;
+
+    }
+
+    .my-skills{
+        margin :10% 4% 7% 2%;
+        display: flex;
+        justify-content: space-between;
+
+    
+    }
+    #contactme{
+        display: block;
+    }
+
+    #contactme .form .btn{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:920px){
+    .navbar{
+        margin-left: -5%;
+    }
+
+    .navbar ul a{
+        font-size: 1.5rem;
+    }
+
+    .about-me{
+        margin:4%;
+        margin-top: 15%;
+    }
+
+    .about-me .image{
+        padding: 6%;
+        width: 25%;
+        margin-right: 10%;
+        background-color: black;
+        border-radius: 8px;
+    }
+
+    #Education-details{
+        margin: 4% 0 4% 6%;
+    
+    }
+    
+    table , tr , th , td{
+        border-collapse: collapse;
+        border: 1px solid black;
+        font-size: 1.2rem;
+
+    }
+
+    .my-skills{
+        margin :10% 4% 7% 8%;
+        display: flex;
+        justify-content: space-between;
+
+    
+    }
+    #contactme{
+        margin-left: 2%;
+        display: flex;
+    }
+
+    #contactme .form .btn{
+        width: 28%;
+    }
+}
+
+</style>
+<body>
+    <nav>
+        <h2>Resume</h2>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contactme">Contact me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="aboutme" class="about-me">
+        <div class="image">
+            <img src="my image.jpeg" alt="">
+        </div>
+        <div>
+            <h2>Hi,</h2>
+            <p>My name is K.Sarath Chandra <br> This is my Resume <br> I am Beginner in Web Development </p>
+        </div>
+    </section>
+
+    <div id="Education-details" style="font-size: 1.3rem;">
+    <h3>My Education Details</h3>
+    <table cellspacing="12">
+        <tr>
+            <th>Exam Passed</th>
+            <th>Year of study</th>
+            <th>Qualification</th>
+            <th>Institution name</th>
+            <th>percentage</th>
+            <th>Grade</th>
+            <th>State</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2022-26</td>
+            <td>BTech.</td>
+            <td>Amrita Vishwa Vidyapeetham</td>
+            <td>-</td>
+            <td>-</td>
+            <td>Kerala</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2020-22</td>
+            <td>Intermediate(+2)</td>
+            <td>Sri chaitanya college</td>
+            <td>92%</td>
+            <td>1</td>
+            <td>Andhra pradesh</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>2017-20</td>
+            <td>High School</td>
+            <td>Ravindra bharathi school</td>
+            <td>95%</td>
+            <td>1</td>
+            <td>Andhra Pradesh</td>
+        </tr>
+    </table>
+</div>
+<section id="skills" >
+        <h2 class="skills">My Skills</h2>
+        <div class="my-skills">
+            <div class="web">
+                <h2>Web Development</h2>
+                <p>Intermediate web developer skilled in front-end and Beginner in back-end technologies, creating responsive and dynamic websites.</p>
+            </div>
+            <div class="programming">
+                <h2>Computer Programming</h2>
+                <p>Skilled computer programmer proficient in multiple programming languages, like <br> Python,  #C <br> C++ , Java. </p>
+            </div>
+            <div class="science">
+                <h2>Data Science and Analysis</h2>
+                <p>Beginner in applying statistical methods and machine learning algorithms to solve complex problems and drive data-driven decision-making.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class ="project_heading">My Projects</h2>
+        <ul>
+           <li>Movies website</li>
+           <li>restarent  website</li>
+           <li>E-commerce website</li>
+        </ul>
+    </section>
+
+    <section id="contactme" >
+        <div class="contact-me">
+            <h2>My Details</h2>
+            <h2>K.sarath chandra</h2>
+            <p><span><i class="fa-solid fa-envelope-open-text" style="color: black; margin-right:5px; font-size:0.8em;"></i></span>abc@gmail.com <br><span><i class="fa-solid fa-envelope-open-text" style="color: black; margin-right:5px; font-size:0.8em;"></i></span> xyz@gmail.com </p>
+            <p><span><i class="fa-solid fa-phone-volume" style="color: black;margin-right:5px; font-size:0.8em;"></i></span><span>123456789  <br> <i class="fa-solid fa-phone-volume" style="color: black; margin-right:5px; font-size:0.8em;"></i></span> 98765421 </p>
+        </div>
+        <div class="form">
+            <h3><u>Contact Me:</u></h3>
+            <form action="mailto:xyz@gmail.com" method="post">
+                <span><i class="fa-solid fa-signature" style="color:black; margin-right:5px"></i></span>
+                <input type="text" placeholder="Name"> <br>
+                <span><i class="fa-solid fa-envelope-open-text" style="color: black; margin-right:5px"></i></span>
+                <input type="email" name="" id="" placeholder="Email"> <br>
+                <span><i class="fa-solid fa-lock" style="color: black; margin-right:5px"></i></span>
+                <input type="text" name="" id="" placeholder="Password"> <br>
+                <textarea rows="5" cols="40" placeholder="Convey Something to me (Optional)"></textarea> <br>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+
+
+</body>
+</html>
